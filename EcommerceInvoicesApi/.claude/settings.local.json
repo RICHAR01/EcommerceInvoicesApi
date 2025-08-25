@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm:*)",
+      "Bash(mkdir:*)",
+      "Bash(python manage.py:*)",
+      "Bash(pipenv run:*)",
+      "Bash(pipenv install:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
