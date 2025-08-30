@@ -1,9 +1,14 @@
-from user.models import User
 import os
+import sys
 import django
+
+# Add the project root to the Python path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project.settings')
 django.setup()
+
+from users.models import User
 
 
 def create_superuser():

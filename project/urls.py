@@ -43,5 +43,7 @@ urlpatterns = [
          cache_timeout=0), name='schema-redoc'),
     path('api/inv/', include('inv.api.urls')),
     path('api/users/', include('users.api.urls')),
+    path('api/buys/', include('buys.api.urls')),
+    path('api/invoices/', include('Invoices.api.router')),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
